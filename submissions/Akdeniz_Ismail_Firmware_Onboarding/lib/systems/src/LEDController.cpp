@@ -5,11 +5,11 @@ float LEDController::calculate(float temperature, float old_temperature, float b
 {
     if (temperature < old_temperature)
     {
-        blinkrate = blinkrate - 100;
+        blinkrate = blinkrate - 5;
     }
     else
     {
-        blinkrate = blinkrate + 100;
+        blinkrate = blinkrate + 5;
     }
     return blinkrate;
 }
